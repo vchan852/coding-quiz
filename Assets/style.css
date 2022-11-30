@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
 #header-box h1 {
-    font-weight: bold;
+    font-weight: bolder;
     background-color: lightsalmon;
     color: white;
     text-shadow: 2px 2px rgb(86, 84, 84);
+}
+
+#current-score-box {
+    font-weight: bold;
 }
