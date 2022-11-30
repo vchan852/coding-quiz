@@ -9,11 +9,14 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    background-color: lightsalmon;
+    margin: 40px;
+    padding: 40px 40px 40px;
+
 }
 
 #header-box h1 {
     font-weight: bolder;
-    background-color: lightsalmon;
     color: white;
     text-shadow: 2px 2px rgb(86, 84, 84);
 }
