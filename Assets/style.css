@@ -184,7 +184,7 @@ header {
 
 }
 
-#try-again-button {
+#play-again-button {
     padding: 20px 50px;
     font-size: 150%;
     border-color: rgb(6, 6, 6);
@@ -194,8 +194,3 @@ header {
 
 }
 
-.again-button {
-    color: purple;
-    cursor: pointer;
-
-}
