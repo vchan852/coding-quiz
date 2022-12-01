@@ -1,3 +1,10 @@
+// VARIABLES
+
+let timeLeft= 100;
+const rightAnswer = 10;
+const wrongAnswer = 10;
+
+
 // QUESTIONS AND ANSWERS FOR QUIZ
 var question = [
 
@@ -6,26 +13,24 @@ var question = [
     b : "() and []",
     c : "{} and []",
     answer: "c",
-    }
-   
+    },
     { question: "What symbol is used to demonstrate a class in css?",
     a : "#",
     b : ".",
     c : "*",
     answer: "b",
-    }
+    },
    
-    { question: 3
+    // { question: 3
    
-    }
+    // }
    
-    { question: 4
+    // { question: 4
    
-    }
+    // }
    
-    { question: 5
+    // { question: 5
    
-    }
-   ]
-
+    // }
+   ];
 
