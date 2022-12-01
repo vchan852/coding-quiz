@@ -43,13 +43,15 @@ header {
     border-color: rgb(6, 6, 6);
     border-radius: 20px;
     border-width: 3px;
+    cursor: pointer;
 }
 
-.beginning-button {
+#start-game .button {
     color: purple;
+    cursor: pointer;
 }
 
-/* #start-game {
+#start-game {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +68,7 @@ header {
     border-radius: 30px 30px;
     left: 0;
     right: 0;
-} */
+}
 
 #text {
     color: black;
@@ -98,11 +100,13 @@ header {
     margin: 50px;
 }
 
-.answer-button {
+#answer-box .button {
     width: 50%;
     margin: 5px;
     background-color: rgb(255, 185, 209);
     border-radius: 50px;
+    cursor: pointer;
+
 }
 
 .answer-option {
@@ -176,6 +180,8 @@ header {
     padding: 10px;
     font-size: 100%;
     border-width: 2px orange; 
+    cursor: pointer;
+
 }
 
 #try-again-button {
@@ -184,8 +190,12 @@ header {
     border-color: rgb(6, 6, 6);
     border-radius: 20px;
     border-width: 3px;
+    cursor: pointer;
+
 }
 
 .again-button {
     color: purple;
+    cursor: pointer;
+
 }
