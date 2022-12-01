@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,42 +11,45 @@
     <link rel="stylesheet" href="./Assets/style.css">
 
 </head>
+
 <body>
     <header>
-        <div id ="header-box">
+        <div id="header-box">
             <h1>Coding Quiz Scoreboard</h1>
         </div>
         <!-- current score area -->
-        <div id ="current-score-box">
+        <div id="current-score-box">
             <h3>Current Score : </h3>
         </div>
     </header>
     <main>
         <div id="gameover-box">
             <h1>Scoreboard</h1>
-            <div id ="gameover-scores"></div>
-            <h2>
-               Your Score:
-               <div class="current-score"></div>
-            </h2>
+            <div id="gameover-scores">
+                <h2>
+                    Your Score:
+                    <div class="current-score"></div>
+                </h2>
+            </div>
+            
+            <form id="player-input-box">
+                <input type="text" placeholder="Enter Your Initials" id="player-name" />
+                <input type="button" value="submit" id="submit-name-button">
+            </form>
             <div id="ending-message">
                 <h3 id="win-lose"></h3>
-                <button id="try-again-button" class ="button">
+                <button id="try-again-button" class="again-button">
                     Play Again
                 </button>
             </div>
+            
         </div>
+
         
-        <form id="player-input-box">
-            <input type="text"
-            placeholder="Enter Your Initials"
-            id="player-name"
-            />
-            <input type="button" value="submit" id="submit-name-button">
-        </form>
     </main>
-    
+
     <link rel="stylesheet" href="./Assets/gameover.js">
 
 </body>
+
 </html>
