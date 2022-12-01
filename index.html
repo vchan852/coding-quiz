@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="./Assets/style.css">
-    <link rel="stylesheet" href="./Assets/script.js">
 </head>
 <body>
     <header>
@@ -20,6 +19,7 @@
     </header>
     
     <main>
+        <!-- Start Quiz Box -->
         <div id="start-game">
             <h1>Start Coding Quiz</h1>
             <p id="text"> hello hello hello hello hello hello hello 
@@ -27,8 +27,41 @@
                 hello hello hello hello hello hello hello 
                 hello hello hello hello hello hello hello 
             </p>
-            <button class="button" id="start-game-button">Let's Play</button>
+            <button class="beginning-button" id="start-game-button">Let's Play</button>
         </div>
+        <!-- Countdown Box -->
+        <div id="#time-left-box">
+            <h2 id="countdown">countdown box</h2>
+        </div>
+        <!-- Question Box -->
+        <div id="questions-box">
+        <h2 id="questions">Question?</h2>
+            <div id="answer-box">
+                <button class="answer-button">
+                    <span class="answer-option-A">A</span>
+
+                </button>
+
+                <button class="answer-button">
+                    <span class="answer-option-B">B</span>
+
+                </button>
+
+                <button class="answer-button">
+                    <span class="answer-option-C">C</span>
+
+                </button>
+
+                <button class="answer-button">
+                    <span class="answer-option-D">D</span>
+
+                </button>
+            </div>
+        
+
+        </div>
+
     </main>
+    <link rel="stylesheet" href="./Assets/script.js">
 </body>
 </html>
