@@ -24,7 +24,7 @@ header {
 
 #current-score-box {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     text-shadow: 2px 2px rgb(86, 84, 84);
 }
@@ -117,3 +117,11 @@ header {
 
 }
 
+/* GAMEOVER PAGE */
+
+#gameover-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
