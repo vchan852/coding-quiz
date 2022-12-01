@@ -37,6 +37,9 @@ header {
 #start-game-button {
     padding: 20px 50px;
     font-size: 150%;
+    border-color: rgb(6, 6, 6);
+    border-radius: 20px;
+    border-width: 3px;
 }
 
 #start-game {
