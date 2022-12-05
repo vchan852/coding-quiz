@@ -27,6 +27,7 @@ header {
     font-size: 30px;
     color: white;
     text-shadow: 2px 2px rgb(86, 84, 84);
+    margin-right: 100px;
 }
 
 #current-leader-box {
