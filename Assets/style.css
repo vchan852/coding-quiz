@@ -29,6 +29,12 @@ header {
     text-shadow: 2px 2px rgb(86, 84, 84);
 }
 
+#current-leader-box {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px rgb(86, 84, 84);
+}
 
 /* START GAME SECTION */
 #start-game h1 {
