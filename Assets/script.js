@@ -1,6 +1,10 @@
 // VARIABLES
 
 let timeLeft= 100;
+let currentQuestion = {};
+let questionsPool = [];
+let score = 0;
+let gameOver = false; //boulean
 const rightAnswer = 10;
 const wrongAnswer = 10;
 
