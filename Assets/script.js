@@ -76,7 +76,7 @@ var question = [
 
 // UPDATE LEADER IN NAV BAR
 
-// updates variables with current information
+// updates variables with current score and leader score
 currentLeaderEl.forEach((el) => {
     el.textContent = currentLeader;
 });
@@ -84,7 +84,7 @@ currentLeaderEl.forEach((el) => {
 setLeader = () => {
     localStorage.setItem("currentLeader", currentScore);
 };
-
+// updates the information on navbar on who is leading
 if (!currentLeader) {
     currentLeaderEl.forEach((el) => {
         el.textContent = "?";
@@ -123,7 +123,7 @@ checkGameOver = () => {
     }
     if (questionsPool.length === 0) {
         gameOver = true;
-        return location.assign("./gameover.html");
+        return location.assign("./gameover.html"); // sends player to the gameover html if all questions are done
     }
 };
 
@@ -131,6 +131,7 @@ populateNextQuestion = () => {
     checkGameOver();
 
     // GAME QUESTIONS 
+    // need to generate 'random' question selection for player
     let questionIndex = Math.floor(Math.random() * questionsPool.length);
     currentQuestion = questionsPool[questionIndex];
     questionEl.textContent = currentQuestion.question;
@@ -147,6 +148,7 @@ populateNextQuestion = () => {
 };
 
 // NEED TO ADD THE ANSWERS , USE EVENTLISTENER
+// THERE NEEDS TO BE A CLICK BUTTON TO RECORD PLAYERS CHOICE
 abButtons.forEach((button) => {
     button.addEventListener("click", (e) => {
         let selectedAnswer = e.target;
@@ -154,7 +156,7 @@ abButtons.forEach((button) => {
         let selectedAnswerProperty = selectedAnswer.dataset["property"];
         rightWrongEl.style.display = "inherit";
 
-
+            // INCREASE POINTS FOR RIGHT ANSWER
         if (selectedAnswerProperty == currentQuestion.answer) {
             //rightWrongEl.textContent = "Right";
             score += rightAnswer;
@@ -177,6 +179,7 @@ abButtons.forEach((button) => {
     });
 });
 
+// TIME STARTS WHEN GAME STARTS
 startCountdown = () => {
     timeLeftEl.textContent = "Remaining Time : " + timeLeft;
     let timerCountdown = setInterval(() => {

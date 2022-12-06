@@ -98,7 +98,9 @@ header {
 
 /* QUESTION BOX SECTION */
 #question {
+    display: flex;
     text-align: center;
+    justify-content: space-around;
 }
 
 #answer-box {
