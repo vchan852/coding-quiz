@@ -17,9 +17,15 @@
         <div id="header-box">
             <h1>Coding Quiz Scoreboard</h1>
         </div>
-        <!-- current score area -->
+        <!-- current leader -->
+        <div id="current-leader-box">
+            <h3>Current Leader :
+                <span class="current-leader"></span>
+            </h3>
+        </div>
+        <!-- current score -->
         <div id="current-score-box">
-            <h3>Current Score : </h3>
+            <h3>Current Score : <span class="current-score"></span></h3>
         </div>
     </header>
     <main>
@@ -27,15 +33,26 @@
             <h1>Scoreboard</h1>
             <div id="gameover-scores">
                 <h2>
-                    Your Score:
-                    <div class="current-score"></div>
+                    Current Leader :
+                    <span class="current-leader">
+                        <span id="end-current-leader-score"></span>
+                    </span>
+                </h2>
+                <h2>
+                    Leader Score :
+                    <span id="game-high-score"></span>
+                </h2>
+                <h2>
+                    Your Score :
+                    <span class="current-score"></span>
                 </h2>
             </div>
             
             <form id="player-input-box">
-                <input type="text" placeholder="Enter Your Initials" id="player-name" />
-                <input type="button" value="submit" id="submit-name-button">
+                <input type="text" placeholder="Enter Your Initials" id="player-name"/>
+                <input type="button" value="submit" id="submit-name-button"/>
             </form>
+            
             <div id="ending-message">
                 <h3 id="win-lose"></h3>
                 <button id="play-again-button" class="button">
@@ -48,7 +65,7 @@
         
     </main>
 
-    <link rel="stylesheet" href="./Assets/gameover.js">
+    <script src="Assets/gameover.js"></script>
 
 </body>
 

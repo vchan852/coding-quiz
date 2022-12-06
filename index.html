@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 
 <head>
     <meta charset="UTF-8">
@@ -19,15 +19,12 @@
         <!-- current leader box -->
         <div id="current-leader-box">
             <h3>Current Leader :</h3>
-                <span id="current-leader"></span>
+            <span class="current-leader" id="current-leader"></span>
         </div>
-        <!-- <div id="highest-score-box">
-            <h3>Highest Score :</h3>
-            <span id="highest-score"></span>
-        </div> -->
+
         <!-- current score area -->
         <div id="current-score-box">
-            <h3>Current Score : 
+            <h3>Current Score :
                 <span id="current-score"></span>
             </h3>
 
@@ -47,7 +44,7 @@
         </div>
         <!-- Countdown Box -->
         <div id="#time-left-box">
-            <h2 id="countdown">countdown box</h2>
+            <h2 id="countdown">_____</h2>
         </div>
         <!-- Question Box -->
         <div id="questions-box">
@@ -61,18 +58,21 @@
 
                 <button class="button">
                     <span class="answer-option">B</span>
-                    <span class="ab-button" data-property="a">BB</span>
+                    <span class="ab-button" data-property="b">BB</span>
 
                 </button>
 
                 <button class="button">
                     <span class="answer-option">C</span>
-                    <span class="ab-button" data-property="a">CC</span>
+                    <span class="ab-button" data-property="c">CC</span>
 
                 </button>
             </div>
         </div>
-
+        <!-- Display Right or Wrong -->
+        <div class="border-top">
+            <h3 id="right-wrong"></h3>
+        </div>
     </main>
     <script src="./Assets/script.js"></script>
 
